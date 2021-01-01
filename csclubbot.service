@@ -1,0 +1,11 @@
+[Unit]
+Description=A Discord bot to help manage the CS Club Discord
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/jordan/csclub
+ExecStart=/home/jordan/csclub/.venv/bin/python /home/jordan/csclub/main.py
+
+[Install]
+WantedBy=multi-user.target
